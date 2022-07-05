@@ -1,6 +1,6 @@
 package com.util;
 
-public class UtilityFunctions<X extends Integer , Y extends Integer , Z extends Integer> {    
+public class UtilityFunctions<X extends Float , Y extends Float , Z extends Float> {    
 	
 	X x;
 	Y y;
@@ -12,7 +12,7 @@ public class UtilityFunctions<X extends Integer , Y extends Integer , Z extends 
 	  this.z = c;
   }
   
-  public Integer compare(){                           // if i have to return a type of X, Y, Z what should be the return type
+  public Float compare(){                           // if i have to return a type of X, Y, Z what should be the return type
 	  
 	 if(x.compareTo(y) >0 && x.compareTo(z) > 0)
 		 return x;
@@ -21,7 +21,7 @@ public class UtilityFunctions<X extends Integer , Y extends Integer , Z extends 
 	 else if(z.compareTo(x) >0 && z.compareTo(y) > 0)
 		 return z;
 	 else
-		 return 0;
+		 return (float) 0;
   }
 
 	}
