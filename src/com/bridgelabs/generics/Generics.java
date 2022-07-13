@@ -15,9 +15,8 @@ public class Generics {
 		 */
 		
 		
-		UtilityFunctions utilityFunctions = new UtilityFunctions<String, String, String>("y", "x", "z");  // Generic to find maximum value
-		String max = utilityFunctions.compare();   // float returned is maximum value
-		System.out.print("Maximum value is "+max);  // to print the maximum value
+		UtilityFunctions utilityFunctions = new UtilityFunctions(1, 2, 3);  // Generic to find maximum value
+		utilityFunctions.compare();   //  returned is maximum value
 	}
 
 }

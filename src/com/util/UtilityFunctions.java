@@ -1,6 +1,6 @@
 package com.util;
 
-public class UtilityFunctions< X extends String , Y extends String , Z extends String> {    
+public class UtilityFunctions< X extends Comparable , Y extends Comparable , Z extends Comparable> {    
 	
 	X x;
 	Y y;
@@ -12,16 +12,14 @@ public class UtilityFunctions< X extends String , Y extends String , Z extends S
 	  this.z = c;
   }
   
-  public String compare(){                           
+  public void compare(){                           
 	  
 	 if(x.compareTo(y) >0 && x.compareTo(z) > 0)
-		 return x;
+		 System.out.println("Maximum value is "+x);    // to print the maximum value
 	 else if(y.compareTo(x) >0 && y.compareTo(z) > 0)
-		 return y;
+		 System.out.println("Maximum value is "+y);    // to print the maximum value
 	 else if(z.compareTo(x) >0 && z.compareTo(y) > 0)
-		 return z;
-	 else
-		 return "none";
+		 System.out.println("Maximum value is "+z);    // to print the maximum value
   }
 
 	}
