@@ -6,13 +6,17 @@ import com.util.UtilityFunctions;
 
 public class Generics {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-
-		UtilityFunctions utilityFunctions = new UtilityFunctions<Float, Float, Float>(10.45f, 90.23f, 30.89f);  // Generic to find maximum value
-		Float max = utilityFunctions.compare();   // float returned is maximum value
+		
+		/**
+		 * Using generics to return the maximun value using compareTo method in datatypes
+		 * different data type values are passed and the values are compared using comparedto and the maximum value is retured
+		 * comparedTo is a method in class comparable this is implicitly extended in datatypes and for generics we have to explicity extend comparable class
+		 */
+		
+		
+		UtilityFunctions utilityFunctions = new UtilityFunctions<String, String, String>("y", "x", "z");  // Generic to find maximum value
+		String max = utilityFunctions.compare();   // float returned is maximum value
 		System.out.print("Maximum value is "+max);  // to print the maximum value
 	}
 
